@@ -12,6 +12,7 @@ int main(int ac, char **av)
     	int nums[cap];
     	int aux = 0;
 		srand(time(0));
+		cout << "ARGS" << cap << "=\"";
 		for(int i = 0; i < cap; i++)
 		{
 			aux = (1 + rand() % 10000);
@@ -27,8 +28,11 @@ int main(int ac, char **av)
 				}
 			}
 			nums[i] = aux;
-			cout << nums[i] << " ";
+			cout << nums[i];
+			if ((i + 1) < cap)
+				cout << " ";
 		}
+		cout << "\"" << endl;
 		return (0);
     }
 	cout << "Error!" << endl;
