@@ -32,6 +32,6 @@ int main(int ac, char **av)
 		return (0);
     }
 	cout << "Error!" << endl;
-	cout << "Usage: ./gen <numbers>" << endl;
+	cout << "Usage: ./gen <size list of numbers>" << endl;
     return (1);
 }
