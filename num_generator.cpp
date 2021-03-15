@@ -12,7 +12,7 @@ int main(int ac, char **av)
     	int nums[cap];
     	int aux = 0;
 		srand(time(0));
-		cout << "ARGS" << cap << "=\"";
+		cout << "\033[0;33mARGS" << cap << "=\"";
 		for(int i = 0; i < cap; i++)
 		{
 			aux = (1 + rand() % 10000);
@@ -32,7 +32,9 @@ int main(int ac, char **av)
 			if ((i + 1) < cap)
 				cout << " ";
 		}
-		cout << "\"" << endl;
+		cout << "\" ; ./push_swap $ARGS" << cap \
+			<< " | wc -l && ./push_swap $ARGS" << cap \
+			<< " | ./checker $ARGS" << cap << endl;
 		return (0);
     }
 	cout << "Error!" << endl;
