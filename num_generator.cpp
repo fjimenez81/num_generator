@@ -29,8 +29,9 @@ int main(int ac, char **av)
 			nums[i] = aux;
 			cout << nums[i] << " ";
 		}
+		return (0);
     }
 	cout << "Error!" << endl;
 	cout << "Usage: ./gen <numbers>" << endl;
-    return 0;
+    return (1);
 }
