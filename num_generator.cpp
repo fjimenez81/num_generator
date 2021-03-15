@@ -32,7 +32,7 @@ int main(int ac, char **av)
 			if ((i + 1) < cap)
 				cout << " ";
 		}
-		cout << "\" ; ./push_swap $ARGS" << cap \
+		cout << "\" ;\necho -n \"\\033[0;33m\" ;./push_swap $ARGS" << cap \
 			<< " | wc -l && ./push_swap $ARGS" << cap \
 			<< " | ./checker $ARGS" << cap << endl;
 		return (0);
